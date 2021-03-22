@@ -1,0 +1,395 @@
+footer{
+    background-color: #333333;
+    color: #FEFEFE;
+    padding-top: 100px;
+    padding-bottom: 70px;
+
+}
+
+
+footer  h2 {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-family: 'RobotoBold';
+    font-size: 30px;
+    color: #FEFEFE;
+    line-height: 42px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+footer h2 span {
+    text-transform: none;
+    text-shadow: none;
+    font-family: 'RobotoBold';
+    font-size: 18px;
+    color: #FEFEFE;
+    line-height: 22px;
+    letter-spacing: 2px;
+
+}
+
+.footerNavContainer{
+    display: flex;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.footerNavigation{
+    display: flex;
+    max-width: 400px;
+    width: 100%;
+    align-items: center;
+    font-size: 16px;
+}
+
+ .footerNavigation li:first-child{
+    margin-right: 200px;
+} 
+
+.footerNavigation li:nth-child(2){
+    margin-right: 80px;
+} 
+
+.footerNavigation li:last-child{
+    margin-right: 100px;
+}
+
+.btn-footer{
+    margin-left: auto;
+}
+
+.footerLogoContainer {
+    max-width: 820px;
+    width: 100%;
+}
+
+.btn-footer{
+    font-size: 17px;
+    padding: 17px 26px;
+    max-width: 275px;
+    width: 100%;
+    margin:0;
+    margin-left: 10px;
+}
+
+.formContainer {
+    width: 820px;
+    /* width: 100%; */
+}
+
+form{
+    position: relative;
+    max-width: 390px;
+    width: 100%;
+}
+
+form h3{
+    font-size: 20px;
+}
+
+
+form ul li{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+
+}
+
+form ul li:last-child{
+    flex-direction: row;
+    font-size: 12px;
+    color: #BDBDBD;
+}
+
+form input{
+    background-color: transparent;
+    border:none;
+    border-bottom: 1px solid #BDBDBD;
+    padding-bottom: 10px;
+}
+
+form input::placeholder{
+    font-size: 14px;
+    color: #E0E0E0;
+}
+
+form input:focus{
+    background-color: transparent;
+    border:none;
+    outline: none;
+    border-bottom: 2px solid #BDBDBD;
+}
+
+.check-input{
+  position: absolute;
+  --webkit-appearance: none;
+  --moz-appearance: none;
+  appearance: none;
+}
+
+
+form ul li:nth-child(3) label{
+    position: absolute;
+    top: 125px;
+    left: 7px;
+    padding: 0 5px;
+    background-color: #333333;
+    font-size: 12px;
+    color: #BDBDBD;
+}
+
+
+#msg{
+    border: 1px solid #BDBDBD;
+    height: 110px;
+    border-radius: 3px;
+}
+
+textarea{
+    background-color: transparent;
+    resize:none
+}
+
+.check{
+    padding-left: 25px;
+    font-size: 12px;
+    color: #BDBDBD;
+}
+
+.check_box{
+    position: absolute;
+    left:0px;
+    width: 13px;
+    height: 13px;
+    background-image: url(../assets/icons/check-box.svg);
+}
+
+
+.check-input:checked + .check_box {
+    background-image: url(../assets/icons/mark.svg), url(../assets/icons/check-box.svg);  
+}
+
+
+.footer-form-wrapper{
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin-top: 57px;
+}
+
+form button{
+    position: absolute;
+    right: 0;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-top: 10px;
+}
+
+
+form button svg{
+  margin-left: 20px;
+}
+
+address{
+   display: flex;
+   flex-direction: column;
+}
+
+address h4{
+    font-family: 'Roboto700';
+    padding-bottom: 35px;
+}
+
+address a:first-of-type{
+    padding-top: 35px;
+}
+
+.socialFooter{
+    position: static;
+    padding-top: 20px;
+}
+
+.socialFooter ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.conrainer-copirait{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    color:  #BDBDBD;
+}
+
+.conrainer-copirait:before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    border-bottom: 0.5px solid #FEFEFE;
+    top: -40px;
+}
+
+@media screen and (max-width: 1570px) {
+   .footerWrapper{
+       max-width: 1200px;
+       padding: 0 150px;
+       width: 100%;
+   }
+
+   .footerLogoContainer {
+    max-width: 460px;
+}
+
+.formContainer {
+    width: 460px;
+}
+
+footer{
+    position: relative;
+}
+
+.btn-footer{
+    position: absolute;
+    bottom: 225px;
+    left: 50%;
+}
+
+.footerNavigation{
+    justify-content: space-between;
+}
+
+ .footerNavigation li:first-child{
+    margin-right: 0px;
+} 
+
+.footerNavigation li:nth-child(2){
+    margin-right: 0px;
+} 
+
+.footerNavigation li:last-child{
+    margin-right: 0px;
+}
+
+  }
+
+
+  @media screen and (max-width: 1198px) {
+    .footerWrapper{
+        max-width: 1200px;
+        padding: 0 50px;
+        width: 100%;
+    }
+
+ .footerNavContainer{
+     flex-direction: column;
+     align-items: start;
+ }
+ 
+ .footerNavigation {
+     padding-top: 20px;
+    align-items: start;
+}
+
+ .footerLogoContainer{
+    justify-content: flex-start;
+ }
+
+ .footerNavigation{
+    flex-direction: column;
+ }
+ .footer-form-wrapper{
+    flex-direction: column;
+ }
+
+ .socialFooter ul{
+    justify-content: flex-start;
+}
+
+.btn-footer{
+    position: absolute;
+    top: 100px;
+    left: 68%;
+}
+
+}
+ 
+
+@media screen and (max-width: 1050px) {
+    .btn-footer{
+        left: 62%;
+    }
+}
+
+
+@media screen and (max-width: 850px) {
+    .btn-footer{
+        left: 60%;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .btn-footer{
+        left: 55%;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .btn-footer{
+        left: 50%;
+    }
+}
+
+@media screen and (max-width: 635px) {
+    .btn-footer{
+        display: none;
+        /* top: 0;
+        bottom: 100px;
+        left: 6%; */
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .footerWrapper{
+        max-width: 320px;
+        padding: 0 10px;
+    }
+
+    .footerLogoContainer {
+        max-width: 300px;
+    }
+    
+    .formContainer {
+        width: 300px;
+    }
+
+    footer {
+        padding-top: 50px;
+        padding-bottom: 27px;
+    }
+}
+
+
+@media screen and (max-width: 335px) {
+    .footerLogoContainer {
+        max-width: 290px;
+    }
+    
+    .formContainer {
+        width: 290px;
+    }
+}
+

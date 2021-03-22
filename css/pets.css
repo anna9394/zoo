@@ -1,0 +1,144 @@
+.band-white{
+   background-color:  var(--primary-background-color);
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    max-width: 1350px;
+    padding-top:100px;
+    padding-bottom: 110px;
+    
+}
+
+.band-white h2{
+    text-align: center;
+    font-size: 48px;
+    color: var(--primary-color);
+}
+
+.wrapper-slider{
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-top: 35px;
+}
+
+.wrapper-slider ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item-pets{
+    margin-right: 30px;
+}
+
+
+.wrapper-slider ul img{
+   max-width: 278px;
+   width: 100%;
+}
+
+.contentPets{
+    bottom: 45px;
+}
+
+  
+  .pointer {
+    padding: 5px;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+    cursor: pointer;
+  }
+  
+
+  .wrapper-slider button svg{
+    fill: var(--color-arrow);
+  }
+
+  .wrapper-slider button:hover svg{
+    fill: var(--color-arrow-hover);
+  }
+
+  @media screen and (max-width: 1350px) {
+    .center{
+        max-width: 1050px;
+    }
+    .item-pets{
+        margin-right: 20px;
+    }
+    .wrapper-slider ul img{
+        max-width: 210px;
+     } 
+
+     .contentPets{
+        padding: 10px;
+        bottom: 25px;
+        font-size: 14px;
+     }
+     .containerBtnContentItem a{
+         font-size: 12px;
+     }
+  }
+  
+
+  @media screen and (max-width: 1080px) {
+      .pointer{
+          display: none;
+      }
+
+      .wrapper-slider{
+        margin: 0 auto;
+        margin-top: 35px;
+     }
+  }
+
+  @media screen and (max-width: 890px) {
+    .center{
+        width: calc(100% - 50px);
+        overflow-x: hidden;
+    }
+
+    .wrapper-slider ul img{
+        width: 210px;
+     }
+}
+
+@media screen and (max-width: 600px) {
+    .center {
+        padding-top:50px;
+        padding-bottom: 50px;
+        width: calc(100% - 20px);
+    }
+    .wrapper-slider ul img {
+        height: 310px;
+        width: auto;
+    }
+
+    .pets h2{
+        font-size: 36px;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+
+    .item-pets:nth-child(2) img{
+        height: 310px;
+        width: auto;
+    }
+
+    .contentPets{
+        width: 195px;
+        bottom: 85px;
+        font-size: 14px;
+     }
+}

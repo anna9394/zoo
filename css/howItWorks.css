@@ -1,0 +1,85 @@
+.howItWorks{
+    background-color: var(--primary-background-color);
+  }
+
+  .wrapper-center{
+    max-width: 795px;
+    width: 100%;
+    padding: 100px 20px;
+    margin: 0 auto;
+  }
+
+  .howItWorks img{
+    max-width: 750px;
+    width: 100%;
+    height: auto;
+  }
+  
+  .howItWorks h2{
+  font-family: 'RobotoBold'; 
+  font-size: 48px;
+  line-height: 57px;
+  }
+  
+  .howItWorks p{
+    font-size: 14px;
+    padding-top: 30px;
+    line-height: 17px;
+  }
+  
+  .howItWorks img{
+    padding-top: 30px;
+  }
+
+.centerTotal{
+    position: static;
+    display: flex;
+    padding-bottom: 30px;
+}
+
+.toggleNumber{
+    color: var(--total-color);
+  }
+  
+  span.toggleNumber-bold{
+    color: var(--primary-color);
+  }
+  
+  .toggleLine{
+    background: var(--total-color);
+  }
+  
+  .toggleLine:before{
+    background: var(--primary-color);
+  }
+
+  .btn-wrapperCenter{
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 639px) {
+    .wrapper-center{
+      max-width: 795px;
+      width: 100%;
+      padding: 50px 10px;
+      margin: 0 auto;
+    }
+
+    .howItWorks p{
+      padding-top: 20px;
+    }
+
+    .centerTotal{
+      padding-bottom: 20px;
+  }
+    
+  }
+  
+  @media screen and (max-width: 400px) {
+    .howItWorks h2 {
+      font-size: 36px;
+  }
+  }
+  
+  
+ 
